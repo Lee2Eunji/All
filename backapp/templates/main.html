@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+  <title>MainPage</title>
+</head>
+<body>
+  <div class="MobileContainer">
+    <img class="Logo" src="{% static 'img/imformation_security.png' %}">
+    <div class="Text">
+      <div class="span">나에게 어울리는<br></div>
+      <div class="span">교내 전공 찾기 테스트<br></div>
+      <div class="mspan">본 테스트는 4학기 미만 학생들을 위한 전공 테스트입니다.</div>
+    </div>
+  </div>
+  <div class="Container">
+    <a href="{% url 'select' %}">
+      <button class="MobileBtn">전공 테스트 시작하기</button>
+    </a>
+    <br>
+    <a href="{% static 'start.html' %}">
+      <button class="MobileBtn">전공 테스트 결과 댓글 보러가기</button>
+    </a>
+    <br>
+    <a href="{% static 'start.html' %}">
+      <button class="MobileBtn">스쿠 쭈안이에가 궁금해!</button>
+    </a>
+  </div>
+  <h1></h1>
+  <a href="form/">설문하기</a>
+  {% for developer in developers %}
+    <p>{{ developer.name }} : {{ developer.count }}명</p>
+  {% endfor %}
+</body>
+<footer>
+  <div class="MobileContainer2">
+    <div class="MobileWrapper">
+      <img class="MobileLogo" href="{% static 'img/TestLogo.png' %}">
+      <div>
+        <Copyright>&copy;2022 SkhuZhuanye.</Copyright>
+        <Copyright>All rights reserved.</Copyright>
+      </div>
+      <div class="Countries">
+        <button class="Language">한국어</button>
+        <button class="Language" onClick={onClickHandler}>English</button>
+        <button class="Language" onClick={onClickHandler}>中國語</button>
+      </div>
+    </div>
+  </divMobileContainer>
+</footer>
+</html>

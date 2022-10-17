@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'MaplestoryOTFLight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'MaplestoryOTFLight';
+}
+/*footer 제외 body 범위*/
+.Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+/*버튼 모음*/
+.BtnBox {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 7rem;
+}
+/*버튼*/
+.MobileBtn {
+  border-radius: 0.3rem;
+  font-family: 'MaplestoryOTFLight';
+  padding: 1.65rem;
+  width: 50vh;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: #117fd6;
+  color: white;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+.MobileBtn:hover {
+  opacity: 0.85;
+}
+  /*footer*/
+.MobileContainer {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.MobileContainer2 {
+width: 100%;
+border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.MobileWrapper {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1.5rem 2.5rem;
+}
+.MobileLogo {
+width: 15vw;
+}
+.Copyright {
+font-size: 0.75rem;
+opacity: 0.65;
+margin-left: 1.5rem;
+}
+.Language {
+border: none;
+background-color: white;
+font-size: 0.7rem;
+}
+.Language:hover {
+  color: #117fd6;
+}
