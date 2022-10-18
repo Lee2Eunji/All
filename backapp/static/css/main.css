@@ -8,7 +8,7 @@
 body {
     font-family: 'MaplestoryOTFLight';
 }
-/*테스트 설명*/
+/*테스트 설명 범위*/
 .Text {
     margin: 1rem 0;
     margin-bottom: 3rem;
@@ -68,15 +68,13 @@ border-top: 1px solid rgba(0, 0, 0, 0.1);
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 1.5rem 2.5rem;
+padding: 1.5rem;
 }
-.Logo {
+.MobileLogo {
 width: 15vw;
 }
-.Copyright {
-font-size: 0.75rem;
-opacity: 0.65;
-margin-left: 1.5rem;
+.Maker {
+    font-size: x-small;
 }
 .Language {
   border: none;

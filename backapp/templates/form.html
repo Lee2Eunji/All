@@ -3,77 +3,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  {% block head %}
-    <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/form.css' %}">
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-{% endblock head %}
-  <title>form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  {% block head %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/form.css' %}">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  {% endblock head %}
+  <title>FormPage</title>
 </head>
 
 <body>
   <form action="{% url 'submit' %}"method="post">
     {% csrf_token %}
     {% for question in questions %}
-    <div class="ContainerAns">
-      <div class="List">
-        <h3>{{ question.number }}번 {{ question.count }}</h3>
-        <h3 class="#">{{ question.content }}</h3>
-        <div class="WrapperAns">
-          {% for choice in question.choice_set.all %}
-          <div>
-              <input 
-                  type="radio" 
-                  name="question-{{ question.pk }}" 
-                  id="choice-{{ choice.pk }}" 
-                  value="{{ choice.developer.pk }}"
-              />
-              <label for="choice-{{ choice.pk }}">
-                  {{ forloop.counter }}. {{choice.content}}
-              </label>
-          </div>
-          {% endfor %}
+    <div class="Container">
+      <h3>{{ question.number }}번 {{ question.count }}</h3>
+      <h3 class="#">{{ question.content }}</h3>
+      <div class="Btn">
+        {% for choice in question.choice_set.all %}
+        <div>
+            <input 
+                type="radio" 
+                class="choice"
+                name="question-{{ question.pk }}" 
+                id="choice-{{ choice.pk }}" 
+                value="{{ choice.developer.pk }}"
+            />
+            <label for="choice-{{ choice.pk }}">
+                {{ forloop.counter }}. {{choice.content}}
+            </label>
         </div>
+        {% endfor %}
+      </div>
     {% if not forloop.first %}
-        <div class="btn_wrap btn_sort">
+      <div class="btn_wrap btn_sort">
     {% else %}
-        <div class="btn_wrap">
+      <div class="btn_wrap">
     {% endif %}
     {% if not forloop.first %}       
-        <button class="prev_btn">이 전</button>
+      <button class="prev_btn">이 전</button>
     {% endif %}
     {% if not forloop.last %}
-        <button class="next_btn">다 음</button>
+      <button class="next_btn">다 음</button>
     {% else %}
-        <input type="submit" value="제 출" class="submit_btn"/>
+      <input type="submit" value="제 출" class="submit_btn"/>
     {% endif %}
-    </div>
-</div>    
-{% endfor %}
-    
-    
+</div>
+    {% endfor %}
   </form>
 </body>
 <footer>
   <div class="MobileContainer2">
     <div class="MobileWrapper">
       <img class="MobileLogo" href="{% static 'img/TestLogo.png' %}">
-      <div>
-        <Copyright>&copy;2022 SkhuZhuanye.</Copyright>
-        <Copyright>All rights reserved.</Copyright>
+      <div class="Maker">
+        <Copyright>&copy;2022 SkhuZhuanye.All rights reserved.</Copyright>
       </div>
       <div class="Countries">
         <button class="Language">한국어</button>
         <button class="Language" onClick={onClickHandler}>English</button>
-        <button class="Language" onClick={onClickHandler}>中國語</button>
+        <button class="Language" onClick={onClickHandler}>中文</button>
       </div>
     </div>
-  </divMobileContainer>
-   
+  </div>
 </footer>
-
 </html>
 {% block js %}
   <script type="text/javascript" src="{% static 'js/form.js' %}"></script>
-{% endblock js %} 
+{% endblock js %}

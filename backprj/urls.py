@@ -20,7 +20,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.main, name='main'),
 	path('form/', views.form, name='form'),
-    path('select/', views.select, name="select"),
+    path('select/', views.select, name='select'),
     path('submit/', views.submit, name='submit'),
+    path('introduce/', views.introduce, name='introduce'),
     path('result/<int:developer_id>/', views.result, name='result'),
 ]

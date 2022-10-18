@@ -8,11 +8,8 @@
 body {
     font-family: 'MaplestoryOTFLight';
 }
-h2 {
-    font-size: large;
-}
-a {
-    text-decoration-line: none;
+p {
+    line-height: 1.2rem;
 }
 /*footer 제외 body 범위*/
 .Container {
@@ -22,60 +19,44 @@ a {
     flex-direction: column;
     align-items: center;
 }
-/*결과 학과*/
-.Btn {
-    width: 20%;
-    border: none;
-    padding: 1.3rem;
-    background-color: #117fd6;
-    color: white;
-    font-weight: 400;
-    font-size: 1rem;
+/*테스트 설명*/
+.Text {
+    width: 60%;
+    margin: 0.5rem 0 0;
+    font-size: small;
+    align-items: center;
+}
+/*개발자들 소개*/
+.text {
+    width: 60%;
+    margin: 0.5rem auto;
+    margin-bottom: 3rem;
+    font-size: small;
     text-align: center;
-    margin-bottom: 1rem;
 }
-/*결과 학과 제외한 학과*/
-.Btn2 {
-    width: 10vh;
-    border: none;
-    padding: 0.5rem;
-    background-color: #117fd6;
-    color: white;
-    font-weight: 400;
-    font-size: x-small;
-    text-align: center;
-    margin-bottom: 1rem;
-    display: inline-block;
+/*footer 제외 body 범위*/
+.MobileContainer {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-/*결과 학과 제외한 학과 범위*/
-.Part {
-    width: 8vh;
-    display: inline-block;
+/*은지 사진*/
+.self {
+    margin-top: 10vh;
 }
-/*결과 title*/
+/*주제*/
 .Shenme {
     padding: 1em 0;
     border-bottom: solid 1px #117fd6;
     font-size: 1rem;
-    width: 50%;
-    line-height: 1.2rem;
-}
-/*결과 설명*/
-.text {
-    width: 50%;
-    border: none;
-    padding: 1.65rem 0;
-    font-size: 0.8rem;
-}
-.MobileBtn:hover {
-    opacity: 0.85;
+    width: 60%;
 }
 /*버튼*/
 .MobileBtn {
     font-family: 'MaplestoryOTFLight';
     border: none;
-    width: 40vh;
-    display: block;
+    width: 45vh;
     border-radius: 0.3rem;
     padding: 1.6rem;
     background-color: #117fd6;
@@ -85,29 +66,19 @@ a {
     margin-bottom: 1rem;
     text-align: center;
 }
-.MobileBtn2:hover {
+.MobileBtn:hover {
     opacity: 0.85;
 }
 /*footer*/
-footer {
-    height: 400%;
-    bottom: 0;
-    position: relative;
-    transform: translateY(400%);
-}
 .MobileContainer2 {
-    height: auto;
-    min-height: 100%;
     width: 100%;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
-    bottom: 0;
 }
 .MobileWrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 0;
-    bottom: 0;
+    padding: 1.5rem;
 }
 .MobileLogo {
     width: 15vw;

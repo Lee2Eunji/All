@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/introduce.css' %}">
+  <title>IntroducePage</title>
+</head>
+<body>
+    <div class="MobileContainer">
+      <img class="Logo" src="{% static 'img/imformation_security.png' %}">
+      <div class="Shenme">개발동기</div>
+      <div class="Text">
+        <p>저희 스쿠 쭈안이에(지앤차)는 성공회대 재학생 중
+           아직 전공 선택을 하지 않은 1, 2학년을 대상으로
+           전공 선택의 고민을 도와주기 위하여 개발하게 되었습니다.<br>
+           결과가 나올 때 학과만 나오는 것이 아닌, 해당 과의 장점과
+           필요 역량도 나타나기 때문에 전공 선택에
+           조금이라도 도움이 될 것이라 생각합니다.<br>
+           1, 2학년이 아닌 3, 4학년은 결과가 본인의 전공과 맞는지
+           가볍게 재미로 테스트하셨으면 좋겠습니다.<br>
+           또한, 저희 팀의 의미는 성공회대학교의 영어 앞글자를 딴
+           SKHU(스쿠)와 중국어로 ‘전공’을 뜻하는 쭈안이에,
+           또 중국어로 ‘검사’를 뜻하는 지앤차를 더해서
+           성공회대 전공검사라는 의미를 지니고 있습니다.<br>
+           팀 이름은 약칭으로 ‘스쿠 쭈안이에’ 입니다.<br>
+           글로벌적인 성공회대의 발판을 마련하기 위해 우측 /하단에
+           3개의 국가의 이미지를 클릭하면 각각의 언어로 번역되어
+           테스트를 즐길 수 있습니다.<br>
+           부디 (전공 선택 하는 데) 도움이 되시길 바라며
+           재미있게 즐겨 주시기를 바랍니다.<br>
+           -스쿠쭈안이에 일동-</p>
+      </div>
+      <div class="Shenme">개발자들</div>
+      <img class="self" src="{% static 'img/imformation_security.png' %}">
+      <div class="text">
+        <p>이은지(FE)<Br>e-mail: eunjijjang11@naver.com<br>github: https://github.Lee2Eunji</p>
+      </div>
+      <img class="self1" src="{% static 'img/imformation_security.png' %}">
+      <div class="text">
+        <p>정재완(BE)<Br>e-mail: eunjijjang11@naver.com<br>github: https://github.Lee2Eunji</p>
+      </div>
+      <img class="self2" src="{% static 'img/imformation_security.png' %}">
+      <div class="text">
+        <p>최명환(BE)<Br>e-mail: eunjijjang11@naver.com<br>github: https://github.Lee2Eunji</p>
+      </div>
+      <a href="https://www.skhu.ac.kr">
+          <button class="MobileBtn">성공회대학교 홈페이지 바로가기</button>
+      </a>
+      <a href="{% url 'select' %}">
+          <button class="MobileBtn">다른 학부 테스트도 궁금해!</button>
+      </a>
+    </div>
+  </body>
+  <footer>
+    <div class="MobileContainer2">
+      <div class="MobileWrapper">
+        <img class="MobileLogo" href="{% static 'img/TestLogo.png' %}">
+        <div class="Maker">
+          <Copyright>&copy;2022 SkhuZhuanye.</Copyright>
+        </div>
+        <div class="Maker">
+          <Copyright>All rights reserved.</Copyright>
+        </div>
+        <div class="Countries">
+          <button class="Language">한국어</button>
+          <button class="Language" onClick={onClickHandler}>English</button>
+          <button class="Language" onClick={onClickHandler}>中文</button>
+        </div>
+      </div>
+    </div>
+  </footer>  
+</html>

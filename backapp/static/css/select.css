@@ -40,41 +40,27 @@ body {
 .MobileBtn:hover {
   opacity: 0.85;
 }
-  /*footer*/
-.MobileContainer {
-  margin-top: 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.Container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 3rem;
-}
+/*footer*/
 .MobileContainer2 {
-width: 100%;
-border-top: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 .MobileWrapper {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 1.5rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
 }
 .MobileLogo {
-width: 15vw;
+  width: 15vw;
 }
-.Copyright {
-font-size: 0.75rem;
-opacity: 0.65;
-margin-left: 1.5rem;
+.Maker {
+  font-size: x-small;
 }
 .Language {
-border: none;
-background-color: white;
-font-size: 0.7rem;
+  border: none;
+  background-color: white;
+  font-size: 0.7rem;
 }
 .Language:hover {
   color: #117fd6;

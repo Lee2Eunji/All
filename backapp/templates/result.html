@@ -9,11 +9,15 @@
 </head>
 <body>
   <div class="Container">
-    <h1>당신과 어울리는 학과는 바로..!!</h1>
+    <h2>당신과 어울리는 학과는 바로..!!</h2>
+    <img class="MobileLogo" src="{% static 'img/testLogo.png' %}">
     <p class="Btn">{{ developer.name  }}</p>
-    <img class="MobileLogo" href="{% static 'img/TestLogo.png' %}">
+    <img class="MobileLogo" src="{% static 'img/TestLogo.png' %}">
     <div class="Shenme">무엇을 배울 수 있을까?</div>
     <div class="text">
+      <li>워크숍을 통해 다양한 분야를 경험할 수 있습니다.</li>
+      <li>워크숍을 통해 다양한 분야를 경험할 수 있습니다.</li>
+      <li>워크숍을 통해 다양한 분야를 경험할 수 있습니다.</li>
       <li>워크숍을 통해 다양한 분야를 경험할 수 있습니다.</li>
     </div>
     <div class="Shenme">인재상 및 필요 역량</div>
@@ -24,29 +28,37 @@
       <button class="MobileBtn">성공회대학교 홈페이지 바로가기</button>
     </a>
     <div class="Shenme">{{ developer }}의 다른 학과는?</div>
+    <div class="ImgCollect">
+      <img class="Part" src="{% static 'img/TestLogo.png' %}">
+      <img class="Part" src="{% static 'img/TestLogo.png' %}">
+      <img class="Part" src="{% static 'img/TestLogo.png' %}">
+    </div>
     <div class="Btn2Collect">
       <p class="Btn2">{{ developer.name  }}</p>
       <p class="Btn2">{{ developer.name  }}</p>
       <p class="Btn2">{{ developer.name  }}</p>
     </div>
-    <a class="MobileBtn2" href='/'>다른 학부 테스트도 궁금해!</a>
-    <a class="MobileBtn2" href='/'>개발자들이 궁금해!</a>
+    <a href="{% url 'select' %}">
+      <button class="MobileBtn">다른 학부 테스트도 궁금해!</button>
+    </a>
+    <a href="{% url 'introduce' %}">
+      <button class="MobileBtn">개발자들이 궁금해!</button>
+    </a>
   </div>
 </body>
 <footer>
   <div class="MobileContainer2">
     <div class="MobileWrapper">
       <img class="MobileLogo" href="{% static 'img/TestLogo.png' %}">
-      <div>
-        <Copyright>&copy;2022 SkhuZhuanye.</Copyright>
-        <Copyright>All rights reserved.</Copyright>
+      <div class="Maker">
+        <Copyright>&copy;2022 SkhuZhuanye.All rights reserved.</Copyright>
       </div>
       <div class="Countries">
         <button class="Language">한국어</button>
         <button class="Language" onClick={onClickHandler}>English</button>
-        <button class="Language" onClick={onClickHandler}>中國語</button>
+        <button class="Language" onClick={onClickHandler}>中文</button>
       </div>
     </div>
-  </divMobileContainer>
-</footer> 
+  </div>
+</footer>
 </html>

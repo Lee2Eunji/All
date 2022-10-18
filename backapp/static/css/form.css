@@ -8,13 +8,21 @@
 body {
   font-family: 'MaplestoryOTFLight';
 }
+/*radio 버튼 없애기*/
+.choice {
+  opacity: 0;
+}
+input[type=radio]:checked + label {
+  background: #117fd6;
+  color: white;
+}
 /*footer 제외 body 범위*/
-.ContainerAns {
+.Container {
   padding: 0rem 2rem;
   flex-direction: column;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   padding-top: 3rem;
 }
@@ -37,41 +45,31 @@ body {
   border-radius: 1rem;
   border: 5px solid #117fd6;
   padding: 5px;
+  margin-top: 1rem;
 }
 .prev_btn:hover, .next_btn:hover, .submit_btn:hover {
   background-color: #117fd6;
   color: white;
 }
 /*footer*/
-.MobileContainer {
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.Container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 3rem;
+footer {
+  width: 100%;
+  margin-top: 1rem;
 }
 .MobileContainer2 {
-  width: 100%;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 .MobileWrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 2.5rem;
+  padding: 1.5rem 0;
 }
 .MobileLogo {
   width: 15vw;
 }
-.Copyright {
-  font-size: 0.75rem;
-  opacity: 0.65;
-  margin-left: 1.5rem;
+.Maker {
+  font-size: x-small;
 }
 .Language {
   border: none;

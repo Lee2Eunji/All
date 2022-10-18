@@ -25,30 +25,25 @@
       <button class="MobileBtn">전공 테스트 결과 댓글 보러가기</button>
     </a>
     <br>
-    <a href="{% static 'start.html' %}">
+    <a href="{% static 'introduce.html' %}">
       <button class="MobileBtn">스쿠 쭈안이에가 궁금해!</button>
     </a>
   </div>
   <h1></h1>
-  <a href="form/">설문하기</a>
-  {% for developer in developers %}
-    <p>{{ developer.name }} : {{ developer.count }}명</p>
-  {% endfor %}
 </body>
 <footer>
   <div class="MobileContainer2">
     <div class="MobileWrapper">
       <img class="MobileLogo" href="{% static 'img/TestLogo.png' %}">
-      <div>
-        <Copyright>&copy;2022 SkhuZhuanye.</Copyright>
-        <Copyright>All rights reserved.</Copyright>
+      <div class="Maker">
+        <Copyright>&copy;2022 SkhuZhuanye.All rights reserved.</Copyright>
       </div>
       <div class="Countries">
         <button class="Language">한국어</button>
         <button class="Language" onClick={onClickHandler}>English</button>
-        <button class="Language" onClick={onClickHandler}>中國語</button>
+        <button class="Language" onClick={onClickHandler}>中文</button>
       </div>
     </div>
-  </divMobileContainer>
+  </div>
 </footer>
 </html>
