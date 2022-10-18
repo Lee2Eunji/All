@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'MaplestoryOTFLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'MaplestoryOTFLight';
+}
+.All {
+    margin: 2vh;
+}
+.list {
+    width: 50%;
+    border: 5px solid #116dbf;
+    border-radius: 10px;
+    padding: 1rem 1rem 0 1rem;
+    margin-bottom: 1vh;
+}
+.Write, .Read {
+    border: none;
+    border-bottom: 1px solid #116dbf;
+    padding: 1vh 0;
+}
+.Submit {
+    margin-top: 3vh;
+    padding: 1vh;
+    font-size: 1.2rem;
+    font-family: 'MaplestoryOTFLight';
+    background-color: white;
+    border: none;
+    border: 2px solid #116dbf;
+    border-radius: 10px;
+}
+.Submit:hover {
+    background-color: #116dbf;
+    color: white;
+}
+/*footer*/
+.MobileContainer2 {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .MobileWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    }
+    .MobileLogo {
+    width: 15vw;
+    }
+    .Maker {
+        font-size: x-small;
+    }
+    .Language {
+      border: none;
+      background-color: white;
+      font-size: 0.7rem;
+    }
+    .Language:hover {
+        color: #117fd6;
+    }

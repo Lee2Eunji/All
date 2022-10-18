@@ -17,3 +17,11 @@ class Choice(models.Model):
     developer = models.ForeignKey(to='backapp.developer', on_delete=models.CASCADE, null=True)
     def __str__(self):
         return self.content
+
+class Board(models.Model):
+    writer = models.CharField(max_length=20)
+    date = models.DateTimeField('data published', null=True)
+    body = models.CharField(max_length=255)
+    
+    def __str__(self):
+        return self.writer

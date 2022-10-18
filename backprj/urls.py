@@ -24,4 +24,5 @@ urlpatterns = [
     path('submit/', views.submit, name='submit'),
     path('introduce/', views.introduce, name='introduce'),
     path('result/<int:developer_id>/', views.result, name='result'),
+    path('it/board/', views.itboard, name='itBoard'),
 ]

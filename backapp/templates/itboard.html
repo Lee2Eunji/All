@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/itboard.css' %}">
+    <title>itboardPage</title>
+</head>
+<body>
+    <div class="All">
+        <p class="Write">Write</p>
+        <table>
+            <label class="table">{{ form.as_table }}</label>
+        </table>
+        <!--
+            <div>
+            {{form.writer}}<Br>
+            {{form.body}}
+            </div>
+        -->
+        <button type='submit' class="Submit">작성 완료</button>
+        <p class="Read">Read</p>
+        {% for writings in writings.all %}
+        <div class="list">
+        <span>{{ writings.writer }}</span>
+        <i><p>{{ writings.date }}</p></i>
+        <b><p>{{ writings.body }}</p></b>
+        </div>
+        {% endfor %}
+        <form method="POST">
+        {% csrf_token %}
+    </div>
+</body>
+<footer>
+    <div class="MobileContainer2">
+      <div class="MobileWrapper">
+        <img class="MobileLogo" href="{% static 'img/TestLogo.png' %}">
+        <div class="Maker">
+          <Copyright>&copy;2022 SkhuZhuanye.All rights reserved.</Copyright>
+        </div>
+        <div class="Countries">
+          <button class="Language">한국어</button>
+          <button class="Language" onClick={onClickHandler}>English</button>
+          <button class="Language" onClick={onClickHandler}>中文</button>
+        </div>
+      </div>
+    </div>
+</footer>
+</html>

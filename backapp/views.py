@@ -1,6 +1,7 @@
 from django.shortcuts import render , redirect
-from .models import Developer, Choice, Question
-
+from .models import Developer, Choice, Question, Board
+from .forms import BoardForm
+from django.utils import timezone
 # Create your views here.
 def main(request):
     developers = Developer.objects.all()
@@ -64,3 +65,16 @@ def introduce(request):
 def select(request):
     
     return render(request, 'select.html')
+
+def itboard(request):
+    writings = Board.objects.all()
+    form = BoardForm()
+    if request.method == 'POST':
+        form = BoardForm(request.POST)
+        if form.is_valid():
+            form = form.save(commit=False)
+            form.date = timezone.now()
+            form.save()
+            return redirect('itBoard')
+    else:
+        return render(request, 'itboard.html', {'form':form, 'writings':writings})
