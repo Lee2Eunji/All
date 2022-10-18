@@ -1,11 +1,12 @@
+{% extends 'main.html' %}
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
+{% block contents %}
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="{% static 'css/select.css' %}">
-    <title>SelectPage</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="{% static 'css/select.css' %}">
+  <title>SelectPage</title>
 </head>
 <body>
     <div class="Container">
@@ -26,22 +27,5 @@
       </div>
     </div>
 </body>
-<footer>
-  <div class="MobileContainer2">
-    <div class="MobileWrapper">
-      <img class="MobileLogo" href="{% static 'img/TestLogo.png' %}">
-      <div class="Maker">
-        <Copyright>&copy;2022 SkhuZhuanye.</Copyright>
-      </div>
-      <div class="Maker">
-        <Copyright>All rights reserved.</Copyright>
-      </div>
-      <div class="Countries">
-        <button class="Language">한국어</button>
-        <button class="Language" onClick={onClickHandler}>English</button>
-        <button class="Language" onClick={onClickHandler}>中文</button>
-      </div>
-    </div>
-  </div>
-</footer>
+{% endblock %}
 </html>
