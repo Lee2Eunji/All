@@ -18,7 +18,6 @@
             {{form.body}}
             </div>
         -->
-        <button type='submit' class="Submit">작성 완료</button>
         <p class="Read">Read</p>
         {% for writings in writings.all %}
         <div class="list">
@@ -27,23 +26,9 @@
         <b><p>{{ writings.body }}</p></b>
         </div>
         {% endfor %}
+        <button type='submit' class="Submit">작성 완료</button>
         <form method="POST">
         {% csrf_token %}
     </div>
 </body>
-<footer>
-    <div class="MobileContainer2">
-      <div class="MobileWrapper">
-        <img class="MobileLogo" href="{% static 'img/TestLogo.png' %}">
-        <div class="Maker">
-          <Copyright>&copy;2022 SkhuZhuanye.All rights reserved.</Copyright>
-        </div>
-        <div class="Countries">
-          <button class="Language">한국어</button>
-          <button class="Language" onClick={onClickHandler}>English</button>
-          <button class="Language" onClick={onClickHandler}>中文</button>
-        </div>
-      </div>
-    </div>
-</footer>
 </html>
