@@ -4,7 +4,196 @@
     font-weight: normal;
     font-style: normal;
 }
-
+@media (min-width: 576px) {
+    body {
+        font-family: 'MaplestoryOTFLight';
+        vertical-align: middle;
+        height: 100%;
+    }
+    .Logo {
+        margin-bottom: 1em;
+    }
+    /*버튼 제외 범위*/
+    .MobileContainer {
+        margin-top: 7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /*버튼 범위*/
+    .Container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+    /*테스트 설명 범위*/
+    .Text {
+        margin-top: 0.3em;
+        margin: 0.5ch 0;
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    /*테스트 설명(1, 2번째 줄)*/
+    .span {
+        margin-bottom: 1rem;
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    /*테스트 부연 설명*/
+    .mspan {
+        margin-bottom: 0.75rem;
+        font-weight: 300;
+        font-size: 1rem;
+    }
+    /*버튼*/
+    .MobileBtn {
+        font-family: 'MaplestoryOTFLight';
+        width: 28vh;
+        border: none;
+        border-radius: 0.3rem;
+        padding: 1.65rem;
+        background-color: #117fd6;
+        color: white;
+        font-weight: 200;
+        font-size: 0.7em;
+        margin-bottom: 2rem;
+    }
+    .MobileBtn:hover {
+        opacity: 0.85;
+    }
+    /*footer*/
+    footer{
+        display: flex;
+        height: 1rem;
+        transform : translateY(1000%);
+        width: 100%;
+        border-top: 1px solid rgb(122, 122, 122);
+    }
+    #wrapper{
+        margin: auto;
+        padding-bottom: 1rem;
+    }
+    .Countries {
+        margin: 0 auto;
+        float: right;
+        padding-top: 1rem;
+    }
+    .Language {
+        border: none;
+        background-color: white;
+        font-size: 0.7rem;
+        margin: 0 auto;
+        float: right;
+    }
+    .Language:hover {
+          color: #117fd6;
+    }
+    .Maker {
+        position: inline-block;
+        font-size: x-small;
+        float: left;
+        padding-top: 1rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    body {
+        font-family: 'MaplestoryOTFLight';
+        vertical-align: middle;
+        height: 100%;
+    }
+    .Logo {
+        margin-bottom: 1em;
+    }
+    /*버튼 제외 범위*/
+    .MobileContainer {
+        margin-top: 7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /*버튼 범위*/
+    .Container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+    /*테스트 설명 범위*/
+    .Text {
+        margin-top: 0.3em;
+        margin: 0.5ch 0;
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    /*테스트 설명(1, 2번째 줄)*/
+    .span {
+        margin-bottom: 1rem;
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    /*테스트 부연 설명*/
+    .mspan {
+        margin-bottom: 0.75rem;
+        font-weight: 300;
+        font-size: 1rem;
+    }
+    /*버튼*/
+    .MobileBtn {
+        font-family: 'MaplestoryOTFLight';
+        width: 28vh;
+        border: none;
+        border-radius: 0.3rem;
+        padding: 1.65rem;
+        background-color: #117fd6;
+        color: white;
+        font-weight: 200;
+        font-size: 0.9em;
+        margin-bottom: 2rem;
+    }
+    .MobileBtn:hover {
+        opacity: 0.85;
+    }
+    /*footer*/
+    footer{
+        display: flex;
+        height: 1rem;
+        transform : translateY(1000%);
+        width: 100%;
+        border-top: 1px solid rgb(122, 122, 122);
+    }
+    #wrapper{
+        margin: auto;
+        padding-bottom: 1rem;
+    }
+    .Countries {
+        margin: 0 auto;
+        float: right;
+        padding-top: 1rem;
+    }
+    .Language {
+        border: none;
+        background-color: white;
+        font-size: 0.7rem;
+        margin: 0 auto;
+        float: right;
+    }
+    .Language:hover {
+          color: #117fd6;
+    }
+    .Maker {
+        position: inline-block;
+        font-size: x-small;
+        float: left;
+        padding-top: 1rem;
+    }
+}
 body {
     font-family: 'MaplestoryOTFLight';
     vertical-align: middle;
@@ -59,7 +248,7 @@ body {
     background-color: #117fd6;
     color: white;
     font-weight: 200;
-    font-size: 0.9em;
+    font-size: 0.em;
     margin-bottom: 2rem;
 }
 .MobileBtn:hover {
