@@ -7,6 +7,8 @@
 
 body {
     font-family: 'MaplestoryOTFLight';
+    vertical-align: middle;
+    height: 100%;
 }
 /*테스트 설명 범위*/
 .Text {
@@ -60,27 +62,36 @@ body {
     margin-bottom: 3rem;
 }
 /*footer*/
-.MobileContainer2 {
-width: 100%;
-border-top: 1px solid rgba(0, 0, 0, 0.1);
+footer{
+    display: flex;
+    height: 1rem;
+    transform : translateY(1000%);
+    width: 100%;
+    border-top: 1px solid rgb(122, 122, 122);
 }
-.MobileWrapper {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 1.5rem;
+#wrapper{
+    margin: auto;
+    padding-bottom: 1rem;
+}
+.Countries {
+    margin: 0 auto;
+    float: right;
+    padding-top: 1rem;
 }
 .MobileLogo {
-width: 15vw;
-}
-.Maker {
-    font-size: x-small;
+    width: 15vw;
+    padding-top: 1rem;
 }
 .Language {
-  border: none;
-  background-color: white;
-  font-size: 0.7rem;
+    border: none;
+    background-color: white;
+    font-size: 0.7rem;
+    margin: 0 auto;
 }
 .Language:hover {
-    color: #117fd6;
+      color: #117fd6;
+}
+.Maker {
+    position: inline-block;
+    font-size: x-small;
 }

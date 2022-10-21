@@ -1,10 +1,10 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-{% block contents %}
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, 
+  maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="{% static 'css/main.css' %}">
   <title>MainPage</title>
 </head>
@@ -30,22 +30,22 @@
       <button class="MobileBtn">스쿠 쭈안이에가 궁금해!</button>
     </a>
   </div>
-  <h1></h1>
-</body>
-{% endblock %}
-<footer>
-  <div class="MobileContainer2">
-    <div class="MobileWrapper">
-      <img class="MobileLogo" href="{% static 'img/TestLogo.png' %}">
-      <div class="Maker">
-        <Copyright>&copy;2022 SkhuZhuanye.All rights reserved.</Copyright>
-      </div>
-      <div class="Countries">
-        <button class="Language">한국어</button>
-        <button class="Language" onClick={onClickHandler}>English</button>
-        <button class="Language" onClick={onClickHandler}>中文</button>
+  <footer>
+    <img class="MobileLogo" href="{% static 'img/TestLogo.png' %}">
+    <div id='wrapper'>
+      <div>
+        <img class="MobileLogo" href="{% static 'img/TestLogo.png' %}">
+        <div class="Maker">
+          <Copyright>&copy;2022 SkhuZhuanye.All rights reserved.</Copyright>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+    <div class="Countries">
+      <button class="Language">한국어</button>
+      <button class="Language" onClick={onClickHandler}>English</button>
+      <button class="Language" onClick={onClickHandler}>中文</button>
+    </div>
+</footer>  
+</body>
+
 </html>
