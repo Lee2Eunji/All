@@ -10,9 +10,13 @@ body {
     vertical-align: middle;
     height: 100%;
 }
+.Logo {
+    margin-bottom: 1em;
+}
 /*테스트 설명 범위*/
 .Text {
-    margin: 1rem 0;
+    margin-top: 0.3em;
+    margin: 0.5ch 0;
     margin-bottom: 3rem;
     display: flex;
     flex-direction: column;
@@ -21,7 +25,7 @@ body {
 }
 /*테스트 설명(1, 2번째 줄)*/
 .span {
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
     font-weight: 600;
     font-size: 1.5rem;
 }
@@ -42,14 +46,14 @@ body {
     color: white;
     font-weight: 200;
     font-size: 0.9em;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
 }
 .MobileBtn:hover {
     opacity: 0.85;
 }
 /*버튼 제외 범위*/
 .MobileContainer {
-    margin-top: 5rem;
+    margin-top: 7rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,15 +82,12 @@ footer{
     float: right;
     padding-top: 1rem;
 }
-.MobileLogo {
-    width: 15vw;
-    padding-top: 1rem;
-}
 .Language {
     border: none;
     background-color: white;
     font-size: 0.7rem;
     margin: 0 auto;
+    float: right;
 }
 .Language:hover {
       color: #117fd6;
@@ -94,4 +95,6 @@ footer{
 .Maker {
     position: inline-block;
     font-size: x-small;
+    float: left;
+    padding-top: 1rem;
 }

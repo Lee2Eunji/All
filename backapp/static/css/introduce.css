@@ -11,24 +11,16 @@ body {
 p {
     line-height: 1.2rem;
 }
-/*footer 제외 body 범위*/
-.Container {
-    height: 115vh;
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 /*테스트 설명*/
 .Text {
-    width: 60%;
+    width: 80%;
     margin: 0.5rem 0 0;
     font-size: small;
     align-items: center;
 }
 /*개발자들 소개*/
 .text {
-    width: 60%;
+    width: 80%;
     margin: 0.5rem auto;
     margin-bottom: 3rem;
     font-size: small;
@@ -40,6 +32,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 1rem;
 }
 /*은지 사진*/
 .self {
@@ -50,13 +43,13 @@ p {
     padding: 1em 0;
     border-bottom: solid 1px #117fd6;
     font-size: 1rem;
-    width: 60%;
+    width: 80%;
 }
 /*버튼*/
 .MobileBtn {
     font-family: 'MaplestoryOTFLight';
     border: none;
-    width: 45vh;
+    width: 28vh;
     border-radius: 0.3rem;
     padding: 1.6rem;
     background-color: #117fd6;
@@ -70,27 +63,35 @@ p {
     opacity: 0.85;
 }
 /*footer*/
-.MobileContainer2 {
-    width: 100%;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-.MobileWrapper {
+footer{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem;
+    height: 1rem;
+    transform : translateY(-100%);
+    width: 100%;
+    border-top: 1px solid rgb(122, 122, 122);
 }
-.MobileLogo {
-    width: 15vw;
+#wrapper{
+    margin: auto;
+    padding-bottom: 1rem;
 }
-.Maker {
-    font-size: x-small;
+.Countries {
+    margin: 0 auto;
+    float: right;
+    padding-top: 1rem;
 }
 .Language {
     border: none;
     background-color: white;
     font-size: 0.7rem;
+    margin: 0 auto;
+    float: right;
 }
 .Language:hover {
-    color: #117fd6;
+      color: #117fd6;
+}
+.Maker {
+    position: inline-block;
+    font-size: x-small;
+    float: left;
+    padding-top: 1rem;
 }

@@ -1,6 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+{% block contents %}
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, 
@@ -30,15 +31,12 @@
       <button class="MobileBtn">스쿠 쭈안이에가 궁금해!</button>
     </a>
   </div>
+  {% endblock %}
   <footer>
-    <img class="MobileLogo" href="{% static 'img/TestLogo.png' %}">
     <div id='wrapper'>
-      <div>
-        <img class="MobileLogo" href="{% static 'img/TestLogo.png' %}">
         <div class="Maker">
           <Copyright>&copy;2022 SkhuZhuanye.All rights reserved.</Copyright>
         </div>
-      </div>
     </div>
     <div class="Countries">
       <button class="Language">한국어</button>

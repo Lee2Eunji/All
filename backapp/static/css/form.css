@@ -18,13 +18,11 @@ input[type=radio]:checked + label {
 }
 /*footer 제외 body 범위*/
 .Container {
-  padding: 0rem 2rem;
-  flex-direction: column;
+  height: 105vh;
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding-top: 3rem;
 }
 /*버튼*/
 .Btn {
@@ -52,30 +50,35 @@ input[type=radio]:checked + label {
   color: white;
 }
 /*footer*/
-footer {
-  width: 100%;
-  margin-top: 1rem;
-}
-.MobileContainer2 {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-.MobileWrapper {
+footer{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 0;
+  height: 1rem;
+  transform : translateY(1500%);
+  width: 100%;
+  border-top: 1px solid rgb(122, 122, 122);
 }
-.MobileLogo {
-  width: 15vw;
+#wrapper{
+  margin: auto;
+  padding-bottom: 1rem;
 }
-.Maker {
-  font-size: x-small;
+.Countries {
+  margin: 0 auto;
+  float: right;
+  padding-top: 1rem;
 }
 .Language {
   border: none;
   background-color: white;
   font-size: 0.7rem;
+  margin: 0 auto;
+  float: right;
 }
 .Language:hover {
-  color: #117fd6;
+    color: #117fd6;
+}
+.Maker {
+  position: inline-block;
+  font-size: x-small;
+  float: left;
+  padding-top: 1rem;
 }

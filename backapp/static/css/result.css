@@ -74,7 +74,7 @@ a {
 .MobileBtn {
     font-family: 'MaplestoryOTFLight';
     border: none;
-    width: 26vh;
+    width: 28vh;
     display: block;
     border-radius: 0.3rem;
     padding: 1.6rem;
@@ -105,15 +105,12 @@ footer{
     float: right;
     padding-top: 1rem;
 }
-.MobileLogo {
-    width: 15vw;
-    padding-top: 1rem;
-}
 .Language {
     border: none;
     background-color: white;
     font-size: 0.7rem;
     margin: 0 auto;
+    float: right;
 }
 .Language:hover {
       color: #117fd6;
@@ -121,4 +118,6 @@ footer{
 .Maker {
     position: inline-block;
     font-size: x-small;
+    float: left;
+    padding-top: 1rem;
 }
