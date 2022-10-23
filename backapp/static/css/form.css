@@ -18,7 +18,6 @@ input[type=radio]:checked + label {
 }
 /*footer 제외 body 범위*/
 .Container {
-  height: 105vh;
   margin-top: 5rem;
   display: flex;
   flex-direction: column;
